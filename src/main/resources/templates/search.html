@@ -28,7 +28,7 @@
 
         <p>
             <label for="searchTerm">Keyword:</label>
-            <input type="text" name="searchTerm" id="searchTerm" />
+            <input type="text" name="searchTerm" id="searchTerm" th:value="${searchTerm}"/>
         </p>
 
         <input type="submit" value="Search" />
@@ -38,7 +38,7 @@
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
 
-    <th:block th:replace = "list-jobs :: listTable"></th:block>
+    <table th:replace = "list-jobs :: listTable"></table>
 
 </div>
 
